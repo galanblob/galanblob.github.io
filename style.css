@@ -158,7 +158,7 @@ p.naikturun {
 .isi-anim1{
     opacity: 0;
     animation: text-anim1 5.5s forwards;
-    animation-delay: 5s;
+    animation-delay: 3.5s;
 }
 
 @keyframes text-anim1 {
@@ -176,7 +176,7 @@ p.naikturun {
     top: -40px;
     opacity: 0;
     animation: text-anim2 4.5s forwards;
-    animation-delay: 9.5s;
+    animation-delay: 7.5s;
 }
 
 @keyframes text-anim2 {
