@@ -40,7 +40,7 @@
   <section>
     <div class="bag2 full">
       <div class="container-fluid center" data-aos="fade-up" data-aos-duration="1000">
-        <h1>I know you at Bali right now, enjoying your holiday</h1>
+        <h1>I know you were in Bali yesterday, enjoying your holiday</h1>
         <p class="isi">I wish i could go to Bali also, <br>but sadly i can't :(</p>
       </div>
     </div>
@@ -70,7 +70,7 @@
         <p class="judul naikturun">Play this <span style="color:#F2BB05
           ;">audio</span> ↓↓</p>
         <audio controls>
-          <source src="./Audio/coba.mp3" type="audio/mpeg"> 
+          <source src="./Audio/hbd.mp3" type="audio/mpeg"> 
         </audio>
       </div>
     </div>
@@ -89,6 +89,9 @@
           ;">me</span>?</p>
           <button type="button" class="btn btn-success" style="margin-right: 30px;">Yes</button>
           <button type="button" class="btn btn-danger" style="padding-left: 13px; padding-right: 13px;">No</button>
+          <p></p>
+          <p class="tombol1">Hehe tombolnya gabisa dipencet</p>
+          <p class="tombol2">Lanjut scroll ajah</p>
       </div>
     </div>
   </section>
@@ -119,10 +122,41 @@
       // Add the animation class
       entry.target.classList.add('highlight-animation');
     }
+    else{
+      entry.target.classList.remove('highlight-animation');
+    }
   });
 });
 
 observer.observe(document.querySelector('.highlight'));
+  </script>
+  <script>
+    const observer1 = new IntersectionObserver(entries => {
+  // Loop over the entries
+  entries.forEach(entry => {
+    // If the element is visible
+    if (entry.isIntersecting) {
+      // Add the animation class
+      entry.target.classList.add('isi-anim1');
+    }
+  });
+});
+
+observer1.observe(document.querySelector('.tombol1'));
+  </script>
+  <script>
+    const observer2 = new IntersectionObserver(entries => {
+  // Loop over the entries
+  entries.forEach(entry => {
+    // If the element is visible
+    if (entry.isIntersecting) {
+      // Add the animation class
+      entry.target.classList.add('isi-anim2');
+    }
+  });
+});
+
+observer2.observe(document.querySelector('.tombol2'));
   </script>
 </body>
 </html>

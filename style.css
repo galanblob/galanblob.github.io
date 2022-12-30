@@ -40,6 +40,10 @@ p{
     height: 100vh;
 }
 
+.bag1{
+    margin-bottom: 20px;
+}
+
 .bag2{
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url('img/b3.png') ;
     background-repeat: no-repeat;
@@ -149,4 +153,35 @@ p.naikturun {
 @keyframes mover {
     0% { transform: translateY(0); }
     100% { transform: translateY(-10px); }
+}
+
+.isi-anim1{
+    opacity: 0;
+    animation: text-anim1 5.5s forwards;
+    animation-delay: 5s;
+}
+
+@keyframes text-anim1 {
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+.isi-anim2{
+    position: relative;
+    top: -40px;
+    opacity: 0;
+    animation: text-anim2 4.5s forwards;
+    animation-delay: 9.5s;
+}
+
+@keyframes text-anim2 {
+    100%{
+        opacity: 1;
+    }
+    
 }
